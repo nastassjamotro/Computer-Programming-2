@@ -1,8 +1,6 @@
-// Nastassja Motro 9/6/17
-
 import java.util.Scanner;
 
-public class Tank {
+public class TankerTruck {
   public static void main (String[] args) {
     Scanner scan = new Scanner(System.in);
     System.out.println("Welcome to your very own Tanker Truck Calculator of sorts");
@@ -15,9 +13,9 @@ public class Tank {
     System.out.println("       -----# ==| |                                                      |");
     System.out.println("       | :) # ==| |                                                      |");
     System.out.println("  -----'----#   | |______________________________________________________|");
-    System.out.println("  |)___()  '#   |______====____   \___________________________________|");
-    System.out.println(" [_/,-,\"--"------ //,-,  ,-,\\\   |/             //,-,  ,-,  ,-,\\ __#");
-    System.out.println("     ( 0 )|===******||( 0 )( 0 )||-  o              '( 0 )( 0 )( 0 )||");
+    System.out.println("  |)___()  '#   |______====____   \\___________________________________|");
+    System.out.println(" [_/,-,\\\"\\--\\\"\\------ //,-,  ,-,\\\\\\\\\\   |/             //,-,  ,-,  ,-,\\\\\\ __#");
+    System.out.println("   ( 0 )|===******||( 0 )( 0 )||-  o              '( 0 )( 0 )( 0 )||");
     System.out.println("----'-'--------------'-'--'-'-----------------------'-'--'-'--'-'--------------");
     System.out.println("This application will calculate how many 11,000 gallon trucks of water you will drink in your lifespan.");
     System.out.println("First, enter an approximate amount of water in ounces that you think you drink every day.");
