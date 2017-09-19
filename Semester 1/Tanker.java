@@ -92,8 +92,20 @@ public class Tanker {
         ounces *= 365;
         ounces *= years;
         ounces /= 128;
-        
+        ounces /= 8000;
+        2017 -= age;
+        statusLabel.setText("So " + name + " who is " + age + " years old, will drink about " + ounces + " 8,000 gallon tankers of water.");
+        mainFrame.setVisible(true);
       }
-    }
+    });
+    
+    // Place Controls on Panels
+    
+    // Don't Forget to Set Visibility
+    mainFrame.add(headerLabel);
+    mainFrame.add(controlPanel);
+    mainFrame.add(buttonPanel);
+    mainFrame.add(statusLabel);
+    mainFrame.setVisible(true);
   }
 }
