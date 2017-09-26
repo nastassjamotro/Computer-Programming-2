@@ -1,0 +1,26 @@
+// Nastassja Motro
+
+/* P2.1: Write a program called FourRectanglePrinter that constructs a Rectangle objcet, prints its location by calling
+System.out.prinlt(box), and then translates and prints it three more times, so that, if the rectangles were drawn, they
+would form one large rectangle. Your program will not produce a drawing. It will simply print the locations of the four
+rectangles */
+
+import java.awt.Rectangle;
+
+public class FourRectanglePrinter {
+  public static void main(String[] args) {
+    System.out.prinlnt(" ");
+    Rectangle box = new Rectangle(10, 20, 30, 40);
+    System.out.prinlnt(box);
+    System.out.prinlnt(" ");
+    box.translate(0, 30);
+    System.out.println(box);
+    System.out.println(" ");
+    box.translate(40, 0);
+    System.out.println(box);
+    System.out.println(" ");
+    box.translate(40, 30);
+    System.out.println(box);
+  }
+}
+
