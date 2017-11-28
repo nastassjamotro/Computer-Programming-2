@@ -26,7 +26,7 @@ public class Tester {
                    "2", "3", "4", "5", "6",
                    "6", "7", "8", "9", "10",
                    "9", "9", "9", "9", "5",
-                   queen, quen, queen, "4", "4",
+                   queen, queen, queen, "4", "4",
                    "2", "4", "6", "8", "9",
                    "4", "5", "6", "7", "8",
                    "4", "4", "4", "7", "8",
@@ -158,4 +158,22 @@ public class Tester {
     System.out.println();
     for (int i = 0; i < cardDeck.size(); i++) {
       System.out.println(cardDeck.get(i).getRank() + " " + cardDeck.get(i).getSuit());
-    }                      d
+    }
+  }
+  
+  public void getValues() {
+    System.out.println();
+    testRules = new Rules(hand);
+    testRules.giveRules();
+    System.out.println("Type of Hand: " + testRules.getHandType());
+    System.out.println("Money won: " + testRules.getDollarAmount() + " dollars");
+  }
+  
+  public void printHand() {
+    System.out.println("----------");
+    System.out.println();
+    System.out.prinltn("Cards: ");
+    for (int i = 0; i < hand.size(); i++) {
+      System.out.println(hand.get(i).getRank() + " " + hand.get(i).getSuit());
+    }
+  }
