@@ -146,7 +146,7 @@ public class Rules {
     }
   }
   
-  public int getMoneyAmount() {
+  public int getDollarsAmount() {
     return dollars;
   }
   
