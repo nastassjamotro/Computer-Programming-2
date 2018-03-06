@@ -6,7 +6,9 @@ import java.util.Scanner;
 
 public class KeyMap {
   public static String mappings[][] = {
-    {"0"}, {"1"}, {"A", "B", "C"}, ... // need to finish
+    {"0"}, {"1"}, {"A", "B", "C"}, {"D", "E", "F"}, {"G", "H", "I"},
+    {"J", "K", "L"}, {"M", "N", "O"}, {"P", "Q", "R", "S"}, 
+    {"T", "U", "V"}, {"W", "X", "Y", "Z"}
   };
   
   public static void generateHelper(List<String> combos, String prefix, String remaining) {
@@ -31,8 +33,36 @@ public class KeyMap {
   }
   
   public static void main(String[] args) {
+    boolean cont = true;
     System.out.println("Welcome to this key mapping thing...program...");
     System.out.println("This program is supposed to take in a 5 digit number and then give you words back based on the corresponding phone keypad");
-    
+    while (cont = true) {
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Enter in five digits: ");
+      String phone = scan.nextLine();
+      if (numbers.length() != 5) {
+        System.out.println("This was not a FIVE digit number");
+        System.out.println("Try again? Y/N");
+        String reply1 = scan.next();
+        if (reply1.charAt(0) == 'Y' || reply1.charAt(0) == 'y') {
+          cont = true;
+        } else {
+          System.exit(0);
+        }
+      } else {
+        List<String> combos = generateCombos(phone);
+        for (String s : combos) {
+          System.out.println("Here are your combos: ");
+          System.out.println(s);
+        }
+        System.out.println("Would you like to try another? Y/N");
+        String reply2 = scan.next();
+        if (reply2.charAt(0) == 'Y' || reply2.charAt(0) == 'y') {
+          cont = true;
+        } else {
+          System.exit(0);
+        }
+      }
+    }
   }
 }
