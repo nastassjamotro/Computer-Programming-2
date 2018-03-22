@@ -1,5 +1,5 @@
 import javax.swing.JFrame;
-import pacman.Board;
+//import pacman.Board;
 
 public class Pacman extends JFrame {
   public Pacman() {
